@@ -7,6 +7,7 @@
 // Contact Form Scripts
 
 $(function() {
+  "use strict";
 
   $("#contactFrom input,#contactForm textarea").jqBootstrapValidation({
     preventSubmit: true,
@@ -22,8 +23,8 @@ $(function() {
       var message = $("textarea#message").val();
       var firstName = name; // For Success/Failure Message
       // Check for white space in name for Success/Fail message
-      if (firstName.indexOf(' ') >= 0) {
-        firstName = name.split(' ').slice(0, -1).join(' ');
+      if (firstName.indexOf(" ") >= 0) {
+        firstName = name.split(" ").slice(0, -1).join(" ");
       }
       $.ajax({
         url: "././mail/contact_me.php",
@@ -998,6 +999,7 @@ $('#name').focus(function() {
 
 // Floating label headings for the contact form
 $(function() {
+  "use strict";
   $("body").on("input propertychange", ".floating-label-form-group", function(e) {
     $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
   }).on("focus", ".floating-label-form-group", function() {
@@ -1009,6 +1011,7 @@ $(function() {
 
 // Navigation Scripts to Show Header on Scroll-Up
 jQuery(document).ready(function($) {
+  "use strict";
   var MQL = 1170;
 
   //primary navigation slide-in effect
@@ -1030,7 +1033,9 @@ jQuery(document).ready(function($) {
         } else if (currentTop > this.previousTop) {
           //if scrolling down...
           $('.navbar-custom').removeClass('is-visible');
-          if (currentTop > headerHeight && !$('.navbar-custom').hasClass('is-fixed')) $('.navbar-custom').addClass('is-fixed');
+          if (currentTop > headerHeight && !$('.navbar-custom').hasClass('is-fixed')) {
+            $('.navbar-custom').addClass('is-fixed');
+          }
         }
         this.previousTop = currentTop;
       });
