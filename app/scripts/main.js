@@ -1041,12 +1041,11 @@ jQuery(document).ready(function($) {
       });
   }
 
-  var feed = new Instafeed({
-    get: 'tagged',
-    tagName: 'impacttrashdragon',
-    clientId: '	b0cd1e8fc3f74f25acf108be9b7e56e5',
-    resolution: 'low_resolution',
-    template: '<a class="insta fadeIn fadeIn-3s fadeIn-Delay-1s" href="{{link}}" target="_New"><img class="insta" src="{{image}}" /></a>'
+  $('.photo-parent-container').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
   });
-  feed.run();
 });
