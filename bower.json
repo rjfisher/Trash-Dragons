@@ -4,7 +4,7 @@
   "dependencies": {
     "bootstrap": "~3.3.5",
     "modernizr": "~2.8.1",
-    "instafeed.js": "^1.4.1"
+    "magnific-popup": "^1.1.0"
   },
   "overrides": {
     "bootstrap": {
