@@ -41,6 +41,14 @@ blockquote {
   font-style: italic;
 }
 
+.description {
+  color: #404040;
+}
+
+.description:hover, .description:focus {
+  color: #0085a1;
+}
+
 hr.small {
   max-width: 100px;
   margin: 15px auto;
@@ -248,6 +256,17 @@ img {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
+}
+
+.post-preview>.description>.post-subtitle {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #0085a1;
+  color: white;
 }
 
 .post-preview>.post-meta {
