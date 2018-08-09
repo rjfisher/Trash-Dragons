@@ -111,11 +111,54 @@
               </h2>
             <h3 class="post-subtitle">
                 <p>The Trash Dragon is powered by volunteers and ready to take a bite out of litter in Lancaster. If you are interested in learning about upcoming volunteer opportunities or borrowing the Trash Dragon Trike Bike for a community clean-up you are organizing, please fill out the Email Sign-up form below:</p>
-                <div class="col-lg-12 text-center" style="margin-top: -25px;">
-                  <a target="_NEW" href="https://goo.gl/forms/4AvaMSOyQApGRaLe2">
-                    <button type="submit" class="btn btn-xl">Sign Up</button>
-                  </a>
-                </div>
+                <form action="https://formspree.io/info@thecommonwheel.org" method="post" id="content" novalidate>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Your Name" id="name" required data-validation-required-message="Please enter your name." />
+                        <p class="help-block text-danger"></p>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" id="email" required data-validation-required-message="Please enter your email." />
+                        <p class="help-block text-danger"></p>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="organization" placeholder="Community Organization (if any)" id="organization" />
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" class="form-control" name="telephone" placeholder="Phone number (optional)" id="telephone" />
+                      </div>
+
+                      <input type="hidden" name="_subject" value="Trash Dragon" />
+
+                      <div class="form-group">
+                        <h4>I'm interested in:</h3>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" name="learning" id="learning" />
+                          <label class="form-check-label" for="learning">Learning About Upcoming Community Cleanups</label>
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" name="borrowing" id="borrowing" />
+                          <label class="form-check-label" for="borrowing">Borrowing the Dragon for a Community Cleanup I am Organizing</label>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="howdidyouhear" placeholder="How did you hear about the Trash Dragon?" id="howdidyouhear" />
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control" id="comments" placeholder="Additional Comments (optional)" name="comments" rows=4></textarea>
+                      </div>
+
+                      <div class="clearfix"></div>
+                      <div class="col-lg-12 text-center">
+                        <div id="success"></div>
+                        <button type="submit" class="btn btn-xl">Sign Up!</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
                 <p><strong>Questions?</strong> Contact: <a href="mailto:adriana@thecommonwheel.com">adriana@thecommonwheel.com</a></p>
                 <p>This project was funded by <a target="_NEW" href="http://www.keeppabeautiful.org/">Keep Pennsylvania Beautiful</a>'s 25 in 25 Grant Program with partial support from the Richard King Mellon Foundation.</p>
               </h3>
